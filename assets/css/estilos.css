@@ -304,3 +304,8 @@ h1 {
     font: normal 20pt "arial black";
     padding: 0.2em;
 }
+
+.infoutil
+{
+    max-width: 18rem;
+}
