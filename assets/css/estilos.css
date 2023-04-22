@@ -171,6 +171,25 @@ h1 {
 }
 
 /*tabla del calendario*/
+
+.navbar {
+    float: left;
+    width: auto;
+    box-sizing: border-box;
+    padding: 15px;  
+}
+
+
+
+#pcitas{
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    background: none;
+    color: blue;
+}
+
+
 #diasc {
     border: 1px solid black;
     border-collapse: separate;
