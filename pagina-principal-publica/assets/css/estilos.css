@@ -12,7 +12,7 @@ body {
 
 
 @media (max-width: 768px) {
-    #intro,#equipo {
+    #intro,#equipo, #noticias, #contacto {
         width: 90% !important;
     }
     .servicio-fila {
