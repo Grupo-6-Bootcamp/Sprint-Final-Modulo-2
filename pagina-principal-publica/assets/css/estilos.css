@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Monserrat&display=swap');
+
+body {
+    font-family: 'Monserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+
 .carousel-inner {
     max-height: 25rem;
+}
+
+
+@media (max-width: 768px) {
+    #intro,#equipo {
+        width: 90% !important;
+    }
+    .servicio-fila {
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
 }

@@ -12,7 +12,7 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="assets/css/estilos.css">
 
 
     <title>Document</title>
@@ -20,7 +20,7 @@
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
         <div class="container">
             <a href="#" class="navbar-brand">MedSystem</a>
 
@@ -51,8 +51,8 @@
     </nav>
     <!--PRINCIPAL -->
     <main>
-
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <!-- SLIDER -->
+        <div id="carouselExampleControls" class="carousel slide mt-5" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="assets/img/slide1.jpg" class="d-block w-100" alt="...">
@@ -76,6 +76,112 @@
             </button>
         </div>
 
+        <!-- intro -->
+        <section class="w-50 mx-auto text-center pt-4" id="intro">
+            <h1 class="p-3 fs-2 border-top border-3">Información del sistema</h1>
+            <p><span class="primary">El Sistema de Gestión de Datos Médicos es una herramienta poderosa para administrar
+                    la información de los pacientes. Con este sistema, puede:
+            </p>
+        </section>
+
+        <section class="container-fluid">
+            <div class="row w-75 mx-auto servicio-fila">
+                <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+                    <img src="assets/img/icono1.png" alt="icono1" width="180" height="160">
+                    <div>
+                        <h3 class="fs-5 mt-4 px-4 pb-1">Lorem ipsum dolor sit amet.</h3>
+                        <p class="px-4">Almacenar y acceder a la información de los pacientes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+                    <img src="assets/img/icono2.png" alt="icono2" width="180" height="160">
+                    <div>
+                        <h3 class="fs-5 mt-4 px-4 pb-1">Lorem ipsum dolor sit amet.</h3>
+                        <p class="px-4">Programar y administrar citas médicas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row w-75 mx-auto servicio-fila">
+                <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+                    <img src="assets/img/icono3.png" alt="icono3" width="180" height="160">
+                    <div>
+                        <h3 class="fs-5 mt-4 px-4 pb-1">Lorem ipsum dolor sit amet.</h3>
+                        <p class="px-4">Ingresar y visualizar históricos de exámenes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+                    <img src="assets/img/icono4.png" alt="icono4" width="180" height="160">
+                    <div>
+                        <h3 class="fs-5 mt-4 px-4 pb-1">Lorem ipsum dolor sit amet.</h3>
+                        <p class="px-4">Enviar mensajes de recordatorio y notificaciones a los pacientes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <section class="w-50 mx-auto text-center pt-4" id="intro">
+                <p><span class="primary">Este sistema es seguro y confiable, lo que significa que puede estar seguro de
+                        que su información está en buenas manos.
+                </p>
+            </section>
+
+        </section>
+
+
+        <div class="container">
+            <h1 class="p-3 fs-2 border-top border-3">Noticias de salud</h1>
+            <div class="card-deck col-lg-6 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="card">
+                        <img class="card-img-top" src="https://via.placeholder.com/350x200" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">¿Por qué son importantes los chequeos médicos?</h5>
+                            <p class="card-text">Una de las formas de saber cómo está la salud de las personas es a
+                                través de los chequeos médicos preventivos periódicos, ya que estos permiten detectar
+                                enfermedades que no necesariamente presentan síntomas.</p>
+                            <a href="#" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="https://via.placeholder.com/350x200" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">¿Qué es la distonía? Síntomas y tratamiento para este trastorno</h5>
+                            <p class="card-text">La distonía es un trastorno del movimiento que puede afectar a
+                                cualquier segmento corporal, especialmente las áreas móviles como extremidades
+                                superiores, inferiores, cuello o cara, como también al cuerpo en su totalidad. Conoce
+                                sus síntomas y tratamiento.</p>
+                            <a href="#" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <img class="card-img-top" src="https://via.placeholder.com/350x200" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">La importancia de una buena postura corporal para evitar lesiones
+                            </h5>
+                            <p class="card-text">La mayoría de las personas pasa largas horas mirando la pantalla del
+                                celular o sentada frente a un computador, ya sea por trabajo o estudio, lo que a la
+                                larga puede afectar nuestra postura corporal, la cual va más allá de “pararse derecho”,
+                                por eso, es importante saber qué hacer para prevenir lesiones.</p>
+                            <a href="#" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="https://via.placeholder.com/350x200" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">La importancia de una buena postura corporal para evitar lesiones
+                            </h5>
+                            <p class="card-text">La mayoría de las personas pasa largas horas mirando la pantalla del
+                                celular o sentada frente a un computador, ya sea por trabajo o estudio, lo que a la
+                                larga puede afectar nuestra postura corporal, la cual va más allá de “pararse derecho”,
+                                por eso, es importante saber qué hacer para prevenir lesiones.</p>
+                            <a href="#" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
     </main>
 </body>
 
