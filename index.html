@@ -1,14 +1,367 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/estilos.css">
-    <link rel="stylesheet" href="assets/js/scripts.js">
-    <title>Inicio</title>
+
+
+    <title>MedSys - Sistema de Gestión de Datos Médicos</title>
 </head>
+
 <body>
-    <h1>Principal</h1>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fs-6 bg-info fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand fs-5 fw-bold">MedSystem</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#intro" class="nav-link">Información del Sistema</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#noticias" class="nav-link">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#registro" class="nav-link">Registro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#ingresoModal">Ingreso Usuarios</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--PRINCIPAL -->
+    <main>
+        <!-- SLIDER -->
+        <div id="carouselExampleControls" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/slide1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/slide2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/slide3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <!-- intro -->
+        <section class="w-50 mx-auto text-center pt-4" id="intro">
+            <h1 class="p-3 fs-2 border-top border-3">Información del sistema</h1>
+            <p>El Sistema de Gestión de Datos Médicos es una herramienta poderosa para administrar
+                la información de los pacientes. Con este sistema, puede:
+            </p>
+        </section>
+
+        <section class="container-fluid">
+            <div class="row w-75 mx-auto servicio-fila">
+                <div class="col-lg-6 col-md-12 col-sm-12 d-flex mt-5 mb-1 icono-wrap">
+                    <img src="assets/img/icono1.png" alt="icono1" width="180" height="120">
+                    <div>
+                        <h3 class="fs-5 mt-4 px-4 pb-1">Almacenar y acceder a la información de los pacientes.</h3>
+                        <p class="px-4">Guardar y recuperar de manera eficiente los datos relevantes de los pacientes,
+                            como historias clínicas, tratamientos y resultados de exámenes, facilita la toma
+                            de decisiones médicas informadas y la atención personalizada de cada paciente.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 d-flex mt-5 mb-1 icono-wrap">
+                    <img src="assets/img/icono2.png" alt="icono2" width="180" height="120">
+                    <div>
+                        <h3 class="fs-5 mt-4 px-4 pb-1">Programar y administrar citas médicas.</h3>
+                        <p class="px-4">Permite a los usuarios programar citas, asignar médicos y recursos, y
+                            administrar el calendario de citas. De esta manera, se pueden coordinar las agendas de los
+                            profesionales de la salud y garantizar una atención eficiente y puntual para los pacientes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row w-75 mx-auto servicio-fila">
+                <div class="col-lg-6 col-md-12 col-sm-12 d-flex mt-2 mb-1 icono-wrap">
+                    <img src="assets/img/icono3.png" alt="icono3" width="180" height="120">
+                    <div>
+                        <h3 class="fs-5 mt-4 px-4 pb-1">Ingresar y visualizar históricos de exámenes.</h3>
+                        <p class="px-4">Los usuarios del sistema pueden ingresar los resultados de exámenes médicos de
+                            los pacientes y visualizarlos de manera clara y ordenada. Esto facilita la revisión y
+                            seguimiento de los resultados de exámenes previos, lo que puede ser útil para la toma de
+                            decisiones médicas y el monitoreo del estado de salud del paciente.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 d-flex mt-2 mb-1 icono-wrap">
+                    <img src="assets/img/icono4.png" alt="icono4" width="180" height="120">
+                    <div>
+                        <h3 class="fs-5 mt-4 px-4 pb-1">Enviar mensajes de recordatorio y notificaciones a los
+                            pacientes.</h3>
+                        <p class="px-4">Enviar mensajes de recordatorio y notificaciones a los pacientes sobre sus citas
+                            médicas, resultados de exámenes o información relevante sobre su salud. Esto ayuda a mejorar
+                            la comunicación entre el paciente y el profesional de la salud, y a garantizar una atención
+                            personalizada y oportuna.</p>
+                    </div>
+                </div>
+            </div>
+
+            <section class="w-50 mx-auto text-center py-4" id="intro">
+                <p><span class="primary">Este sistema es seguro y confiable, lo que significa que puede estar seguro de
+                        que su información está en buenas manos.
+                </p>
+                <p>Regístrese hoy para comenzar a utilizar el sistema.</p>
+                <a class="btn btn-info text-light btn-lg" href="#registro" role="button">Registrarse</a>
+            </section>
+
+        </section>
+
+
+        <section class="w-50 mx-auto text-center pt-4" id="noticias">
+            <h1 class="p-3 fs-2 border-top border-3">Noticias de salud</h1>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center">
+                    <div class="card h-100 pb-2">
+                        <img class="card-img-top" src="assets/img/noticia1.jpg" alt="Card image cap">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">¿Por qué son importantes los chequeos médicos?</h5>
+                            <p class="card-text">Una de las formas de saber cómo está la salud de las personas es a
+                                través de los chequeos médicos preventivos periódicos, ya que estos permiten detectar
+                                enfermedades que no necesariamente presentan síntomas.</p>
+                            <a href="#" class="btn btn-info mt-auto">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center">
+                    <div class="card h-100 pb-2">
+                        <img class="card-img-top" src="assets/img/noticia2.jpg" alt="Card image cap">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">¿Qué es la distonía? Síntomas y tratamiento para este trastorno</h5>
+                            <p class="card-text">Es un trastorno del movimiento que puede afectar a
+                                cualquier segmento corporal, especialmente las áreas móviles como extremidades, cuello o
+                                cara, como también al cuerpo en su totalidad. Conoce
+                                sus síntomas y tratamiento.</p>
+                            <a href="#" class="btn btn-info mt-auto">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row pt-3">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/img/noticia3.jpg" alt="Card image cap">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">La importancia de una buena postura corporal para evitar lesiones
+                            </h5>
+                            <p class="card-text">La mayoría de las personas pasa largas horas mirando la pantalla del
+                                celular o sentada frente a un computador, ya sea por trabajo o estudio, lo que a la
+                                larga puede afectar nuestra postura corporal, la cual va más allá de “pararse derecho”,
+                                por eso, es importante saber qué hacer para prevenir lesiones.</p>
+                            <a href="#" class="btn btn-info mt-auto">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/img/noticia4.jpg" alt="Card image cap">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Los alimentos que debes consumir en otoño para fortalecer el sistema
+                                inmune</h5>
+                            <p class="card-text">Con la llegada del otoño también comienzan las bajas temperaturas y
+                                disminuyen las horas de luz solar, por ende, las necesidades del cuerpo cambian.</p>
+                            <a href="#" class="btn btn-info mt-auto">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </main>
+
+    <section class="mt-3 pb-3 bg-info text-light" id="registro">
+        <div class="container col-lg-6">
+            <h1 class="p-3 fs-2">Registro de Usuarios</h1>
+            <form>
+                <div class="form-group mb-3">
+                    <label class="mb-2" for="nombre">Nombre completo:</label>
+                    <input type="text" class="form-control" id="nombre">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" class="form-control" id="cedula">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="password2"> Confirme su contraseña:</label>
+                    <input type="password" class="form-control" id="cedula">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="fecha-nacimiento">Fecha de nacimiento</label>
+                    <input type="date" class="form-control" id="fecha-nacimiento">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="correo-electronico">Correo electrónico</label>
+                    <input type="email" class="form-control" id="correo-electronico">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" class="form-control" id="direccion">
+                </div>
+                <button type="submit" class="btn btn-light">Registrar nuevo usuario</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="w-50 mx-auto text-center pt-4" id="contacto">
+        <h1 class="p-3 fs-2 border-top border-3">Contacto</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="fs-5 fw-bold mt-4 px-4 pb-1">MedSystem</h3>
+                    <p class="mt-4">Av. Siempreviva 742<br>Springfield</p>
+                    <p class="mt-4"><span class="fw-bold">Teléfono: </span>+1 123 456 789</p>
+                    <p class="mt-4"><span class="fw-bold">Correo: </span>contacto@medsystem.com</p>
+                </div>
+                <div class="col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3224.660181107632!2d-115.01789122502824!3d36.07739180811171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8d0b89793735f%3A0x82738f1bb7cadcb8!2s712%20Red%20Bark%20Ln%2C%20Henderson%2C%20NV%2089011%2C%20EE.%20UU.!5e0!3m2!1ses-419!2scl!4v1682220152149!5m2!1ses-419!2scl"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="bg-info text-light pt-4" id="footer">
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-md-4">
+                    <h3 class="fs-5 fw-bold mt-4 pb-1 text-start">Suscríbete al Newsletter</h3>
+                    <p>Recibe todos los meses en tu correo las últimas novedades de MedSystem.</p>
+                    <div>
+                        <form action="">
+                            <input type="text" placeholder="tucorreo@ejemplo.com">
+                            <button class="btn btn-light">ENVIAR</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h3 class="fs-5 fw-bold mt-4 pb-1 text-start">Links de interés</h3>
+                    <ul class="list-unstyled">
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>LinkedIn</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="card bg-info text-light mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex flex-column justify-content-center">
+                                <img src="assets/img/20.png" class="img-fluid rounded-start" alt="derecho"
+                                    width="180px">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-title">TU DERECHO ES NUESTRO DEBER</h4>
+                                    <p><a href="https://www.minsal.cl/derechos-y-deberes-de-los-pacientes/"
+                                            class="card-text">Derechos y deberes de los pacientes</a></p>
+                                    <p><a href="https://www.supersalud.gob.cl/consultas/667/w3-article-7973.html"
+                                            class="card-text">Solicitud de antecedentes medicos de los pacientes</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <div class="col-md-4">
+                    <div class="card bg-info border-light text-left">
+                        <img class="img-fluid rounded-start" src="assets/img/20.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">TU DERECHO ES NUESTRO DEBER</h4>
+                            <a href="https://www.minsal.cl/derechos-y-deberes-de-los-pacientes/"
+                                class="card-text">Derechos y deberes de los pacientes</a>
+                            <a href="https://www.supersalud.gob.cl/consultas/667/w3-article-7973.html"
+                                class="card-text">Solicitud de antecedentes medicos de los pacientes</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>2023 Creado por Grupo 6 - Bootcamp</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Modal de ingreso -->
+    <div class="modal fade" id="ingresoModal" tabindex="-1" role="dialog" aria-labelledby="ingresoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content bg-info text-light">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ingresoModalLabel">Ingresar a la zona de usuarios registrados</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="correoElectronico">Correo electrónico</label>
+                            <input type="email" class="form-control" id="correoElectronico"
+                                placeholder="Ingresa tu correo electrónico">
+                        </div>
+                        <div class="form-group">
+                            <label for="contrasena">Contraseña</label>
+                            <input type="password" class="form-control" id="contrasena"
+                                placeholder="Ingresa tu contraseña">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-light">Ingresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
