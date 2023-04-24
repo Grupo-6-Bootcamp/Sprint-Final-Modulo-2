@@ -142,6 +142,13 @@ form .userexam {
 
 }
 
+.addexam{
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px;
+    box-sizing: border-box;
+}
+
 /* PAGINA DE CALENDARIO*/
 
 /*instrucciones generales*/
