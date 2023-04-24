@@ -5,7 +5,10 @@
 .card {
     margin-bottom: 20px;
 }
-
+.cartas{
+    margin-top: 100px;
+    margin-left: 40px;
+}
 .card-title {
     text-align: left;
 }

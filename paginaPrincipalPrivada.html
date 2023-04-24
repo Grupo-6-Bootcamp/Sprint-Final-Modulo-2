@@ -36,19 +36,20 @@
                     <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
                             class="fas fa-user-friends fa-fw me-3"></i><span>Mi Perfil</span></a>
                     <a href="#" class="list-group-item list-group-item-action py-2 ripple">
-                        <i class="fas fa-bell fa-fw me-3"></i><span>Historial de Citas</span>
+                        <i class="fa-solid fa-bookmark fa-fw me-3"></i><span>Historial de Citas</span>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
                             class="fas fa-images fa-fw me-3"></i><span>Mis Exámenes</span></a>
+                    <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
+                            class="fa-solid fa-file-medical fa-fw me-3"></i><span>Historial Clínico</span></a>
                     <a href="#" class="list-group-item list-group-item-action py-2 ripple">
-                        <i class="fas fa-video fa-fw me-3"></i><span>Directorio</span>
+                        <i class="fa-solid fa-circle-info fa-fw me-3"></i><span>Directorio</span>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-                            class="fas fa-message fa-fw me-3"></i><span>Mensajes</span></a>
+                            class="fas fa-lock fa-fw me-3"></i><span>Usuarios</span></a>
                     <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
                             class="fas fa-gear fa-fw me-3"></i><span>Configuración</span></a>
-                    <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-                            class="fas fa-lock fa-fw me-3"></i><span>Privacidad</span></a>
+
                     <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
                             class="fas fa-blank fa-fw me-3"></i><span></span></a>
                     <a href="/" class="list-group-item list-group-item-action py-2 ripple"><i
@@ -59,7 +60,7 @@
         <!-- Sidebar -->
 
         <!-- Navbar -->
-        <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top mb-3">
+        <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-info fixed-top mb-5">
             <!-- Container wrapper -->
             <div class="container-fluid">
                 <!-- Toggle button -->
@@ -117,65 +118,43 @@
         <!-- Navbar -->
     </header>
 
-    <div class="container mt-5 ms-5 ">
-        <div class="row mt-4 d-flex justify-content-end flex-wrap">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-6">
-                <div id="carouselExampleCaptions" class="carousel slide ">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+    <div class="container text-center mt-5 d-flex justify-content-end flex-wrap">
+        <section class="row cartas">
+            <div class="col-xs-12 col-sm-12 col-md-9 d-flex justify-content-evenly flex-wrap">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/calendario.jpg" class="card-img-top" alt="calendarioCitas">
+                    <div class="card-body">
+                        <p class="card-text">Revisa cuando son tu próximas citas médicas.</p>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <a href="#"><img src="assets/img/calendario.jpg" class="d-block w-100" alt="Horario"></a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Próximas Citas</h5>
-                                <p>Revisa cuando son tu próximas citas médicas</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#"><img src="assets/img/misExamenes.jpg" class="d-block w-100" alt="misExamenes"></a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Consulta los resultados de tus exámenes</h5>
-                                <p>Mántente informado de todos los resultados de tus exámenes</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#"><img src="assets/img/directorio.jpg" class="d-block w-100" alt="directorio"></a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Accede a nuestro directorio</h5>
-                                <p>Infórmate más sobre nuestros servicios</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/misExamenes.jpg" class="card-img-top" alt="misExamenes">
+                    <div class="card-body">
+                        <p class="card-text">Mántente informado de todos los resultados de tus exámenes de sangre.</p>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/directorio.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Infórmate más sobre nuestros servicios.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/charts.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Nueva opción para ver tus resultados a tráves de gráficos.</p>
+                    </div>
                 </div>
             </div>
 
-
-            <aside class="col-xs-12 col-sm-12 col-md-4 col-4 mt-4">
-                <div class="d-flex align-items-center flex-wrap">
-                    <div class="card bg-warning" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Tiene una cita próxima</h5>
-                            <p class="card-text">Su próxima cita está agendada para el día <strong> jueves, 08 de junio
-                                    de 2023 a las 16:15 hrs.</strong> Debe atenderse con <strong>IGNACIO VERDEJO
-                                    SAAVEDRA.</strong></p>
-                            <a href="#" class="card-link">Ir a ver mi Calendario</a>
-                        </div>
+            <aside class="col-md-3 mb-3 d-flex justify-content-center">
+                <div class="card bg-warning" style="width: 21rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Tiene una cita próxima</h5>
+                        <p class="card-text">Su próxima cita está agendada para el día <strong> jueves, 08 de junio
+                                de 2023 a las 16:15 hrs.</strong> Debe atenderse con <strong>IGNACIO VERDEJO
+                                SAAVEDRA.</strong></p>
+                        <a href="#" class="card-link">Ir a ver mi Calendario</a>
                     </div>
                     <div>
                         <a
@@ -183,14 +162,37 @@
                                 src="assets/img/mamografia.png" alt="mamografia"></a>
                     </div>
                     <div>
-                        <a href="https://www.gob.cl/pasoapaso/"><img src="assets/img/yomevacuno.png" alt="yomevacuno"></a>
+                        <a href="https://www.gob.cl/pasoapaso/"><img src="assets/img/yomevacuno.png"
+                                alt="yomevacuno"></a>
                     </div>
-                </div>
+                    <div>
+                        <a href="https://www.minsal.cl/derechos-y-deberes-de-los-pacientes/"><img
+                                src="assets/img/derechosPaciente.png" alt="DerechosPacientes"></a>
+                    </div>
+                    <div>
+                        <a href="https://oirs.minsal.cl/"><img src="assets/img/oirs.png" alt="OIRS"></a>
+                    </div>
             </aside>
-        </div>
+        </section>
     </div>
 
-
 </body>
+<script>
+    $(document).ready(function () {
+        // Bounce button
+        $("#animatebutton").click(function () {
+            const element = document.querySelector('.animatebutton');
+            element.classList.add('animated', 'bounceIn');
+            setTimeout(function () {
+                element.classList.remove('bounceIn');
+            }, 1000);
+        });
+    });
+</script>
+<script src="https://kit.fontawesome.com/6c1efd59d0.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
 
 </html>
