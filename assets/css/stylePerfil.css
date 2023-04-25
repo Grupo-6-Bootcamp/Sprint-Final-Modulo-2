@@ -1,0 +1,33 @@
+    /* Mobile-first styles */
+    .card {
+        margin: 20px;
+    }
+
+    .card-header h4 {
+        margin-bottom: 0;
+    }
+
+    .card-body {
+        padding: 0;
+    }
+
+    .profile-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .profile-data {
+        padding: 10px;
+    }
+
+    .profile-data h5 {
+        margin-bottom: 0;
+    }
+
+    /* Large screen styles */
+    @media (min-width: 992px) {
+        .card {
+            width: 50%;
+            margin: 50px auto;
+        }
+    }
