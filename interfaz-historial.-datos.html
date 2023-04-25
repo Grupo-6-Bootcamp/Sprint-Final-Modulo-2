@@ -14,7 +14,7 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/g-estilos.css">
 
 
     <title>MedSys - Sistema de Gestión de Datos Médicos</title>
@@ -22,36 +22,41 @@
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark fs-6 bg-info fixed-top">
-        <div class="container">
-            <a href="#" class="navbar-brand fs-5 fw-bold">MedSystem</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="paginaPrincipalPrivada.html">
+                <img src="assets/img/logo.webp" alt="AwakeMed" height="25">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="#" class="nav-link active">Inicio</a>
+                        <a class="nav-link active" href="paginaPrincipalPrivada.html"><i class="fas fa-user-alt fa-fw me-3"></i>Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#intro" class="nav-link">Información del Sistema</a>
+                        <a class="nav-link active" href="perfilUsuario.html"><i class="fas fa-user-friends fa-fw me-3"></i>Mi Perfil</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#noticias" class="nav-link">Noticias</a>
+                        <a class="nav-link active" href="calendarcitas.html"><i class="fa-solid fa-bookmark fa-fw me-3"></i>Historial de citas</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#registro" class="nav-link">Registro</a>
+                        <a class="nav-link active" href="examenes.html"><i class="fas fa-images fa-fw me-3"></i>Mis exámenes</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contacto</a>
+                        <a class="nav-link active" href="interfaz-historial.-datos.html"><i class="fa-solid fa-file-medical fa-fw me-3"></i>Historial clínico</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#ingresoModal">Ingreso
-                            Usuarios</a>
+                        <a class="nav-link active" href="directorios.html"><i class="fa-solid fa-circle-info fa-fw me-3"></i>Directorio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="usuarios-adicionales.html"><i class="fas fa-lock fa-fw me-3"></i>Usuarios</a>
                     </li>
                 </ul>
+                <div class="d-flex">
+                    <a class="btn btn-danger" href="index.html" role="button"><i class="fas fa-door-open fa-fw me-3"></i> Salir</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -136,7 +141,7 @@
                     <h3 class="fs-5 fw-bold mt-4 pb-1 text-start">Suscríbete al Newsletter</h3>
                     <p>Recibe todos los meses en tu correo las últimas novedades de MedSystem.</p>
                     <div>
-                        <form action="">
+                        <form action="submit">
                             <input type="text" placeholder="tucorreo@ejemplo.com">
                             <button class="btn btn-light">ENVIAR</button>
                         </form>
@@ -215,6 +220,8 @@
             </div>
         </div>
     </div>
+
+    <script src="https://kit.fontawesome.com/6c1efd59d0.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
