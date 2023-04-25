@@ -1,4 +1,10 @@
-/* Inicio de sesion para examenes*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
 .bexam {
     margin: 0;
     padding: 0;
@@ -141,6 +147,13 @@ form .userexam {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
 
+}
+
+.addexam{
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px;
+    box-sizing: border-box;
 }
 
 /* PAGINA DE CALENDARIO*/
@@ -304,10 +317,6 @@ h1 {
     padding: 0.2em;
 }
 
-.infoutil
-{
-    max-width: 18rem;
-}
 /*DIRECTIRIO*/
 
 
@@ -356,4 +365,3 @@ h1 {
     75% {margin-left: -300%;}
     95% {margin-left: -300%;}
 }
-
