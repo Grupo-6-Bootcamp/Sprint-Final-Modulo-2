@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/g-estilos.css">
+
+
+    <title>MedSys - Sistema de Gestión de Datos Médicos</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="paginaPrincipalPrivada.html">
+                <img src="assets/img/logo.webp" alt="AwakeMed" height="25">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="paginaPrincipalPrivada.html"><i class="fas fa-user-alt fa-fw me-3"></i>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="perfilUsuario.html"><i class="fas fa-user-friends fa-fw me-3"></i>Mi Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="calendarcitas.html"><i class="fa-solid fa-bookmark fa-fw me-3"></i>Historial de citas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="examenes.html"><i class="fas fa-images fa-fw me-3"></i>Mis exámenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="interfaz-historial.-datos.html"><i class="fa-solid fa-file-medical fa-fw me-3"></i>Historial clínico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="directorios.html"><i class="fa-solid fa-circle-info fa-fw me-3"></i>Directorio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="usuarios-adicionales.html"><i class="fas fa-lock fa-fw me-3"></i>Usuarios</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a class="btn btn-danger" href="index.html" role="button"><i class="fas fa-door-open fa-fw me-3"></i> Salir</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="w-75 mx-auto py-5" id="intro">
+            <div class="container col-lg-6">
+                <h1 class="p-4 fs-2 text-center">Registro de Nuevo Usuario (Personal Médico o Familiares)</h1>
+                <form>
+                    <div class="form-group mb-3">
+                        <label class="mb-2" for="nombre">Nombre completo:</label>
+                        <input type="text" class="form-control" id="nombre">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="mb-2" for="parentesco">Nombre del paciente:</label>
+                        <select class="form-control" id="nombre-paciente">
+                            <option value="">Seleccione</option>
+                            <option value="paciente1">Alejandro Méndez</option>
+                            <option value="paciente2">Bernardo López</option>
+                            <option value="paciente3">Avelino Garriga</option>
+                            <option value="paciente4">Maria Grau</option>
+                            <option value="paciente5">Vicente Muñiz</option>
+                            <option value="paciente6">Delfina Font</option>
+                            <option value="paciente7">Felisa del Castillo</option>
+                            <option value="paciente8">Lucio Ferreiro</option>
+                            <option value="paciente9">Amaia Calero</option>
+                            <option value="paciente10">Maria Castaño</option>
+                            <option value="paciente11">Claudia Villegas</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="mb-2" for="parentesco">Parentezco con el paciente:</label>
+                        <select class="form-control" id="parentesco">
+                            <option value="">Seleccione</option>
+                            <option value="medico">Personal Médico</option>
+                            <option value="familiar">Familiar</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="password2"> Confirme su contraseña:</label>
+                        <input type="password" class="form-control" id="password2">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="fecha-nacimiento">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" id="fecha-nacimiento">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="correo-electronico">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correo-electronico">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="direccion">Dirección</label>
+                        <input type="text" class="form-control" id="direccion">
+                    </div>
+                    <button type="submit" class="btn btn-info text-light">Registrar nuevo usuario</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-info text-light pt-4" id="footer">
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-md-4">
+                    <h3 class="fs-5 fw-bold mt-4 pb-1 text-start">Suscríbete al Newsletter</h3>
+                    <p>Recibe todos los meses en tu correo las últimas novedades de MedSystem.</p>
+                    <div>
+                        <form action="submit">
+                            <input type="text" placeholder="tucorreo@ejemplo.com">
+                            <button class="btn btn-light">ENVIAR</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h3 class="fs-5 fw-bold mt-4 pb-1 text-start">Links de interés</h3>
+                    <ul class="list-unstyled">
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>LinkedIn</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="card bg-info text-light mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex flex-column justify-content-center">
+                                <img src="assets/img/20.png" class="img-fluid rounded-start" alt="derecho" width="180">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-title">TU DERECHO ES NUESTRO DEBER</h4>
+                                    <p><a href="https://www.minsal.cl/derechos-y-deberes-de-los-pacientes/"
+                                            class="card-text">Derechos y deberes de los pacientes</a></p>
+                                    <p><a href="https://www.supersalud.gob.cl/consultas/667/w3-article-7973.html"
+                                            class="card-text">Solicitud de antecedentes medicos de los pacientes</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>2023 Creado por Grupo 6 - Bootcamp</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://kit.fontawesome.com/6c1efd59d0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
